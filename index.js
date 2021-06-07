@@ -1,10 +1,13 @@
 const button = document.querySelector("#start-btn")
 let timeDisplay = document.getElementById("time-remaining")
-let userTime = document.getElementById("time-value")
-let timeLeft = 10;
+//let userTime = document.getElementById("time-value").value
+let timeLeft = document.getElementById("time-value").value;
+
 
 
 button.addEventListener("click", function(event) {
+
+    let timeLeft = document.getElementById("time-value").value;
 
     setInterval(function(){
 
@@ -18,6 +21,22 @@ button.addEventListener("click", function(event) {
 },1000);
     
 })
+
+
+/*
+button.addEventListener("click", function(event) {
+
+    let timeLeft = document.getElementById("time-value").value;
+
+
+    timeDisplay.innerText = timeLeft
+})
+
+*/
+
+
+
+
 
 
 
